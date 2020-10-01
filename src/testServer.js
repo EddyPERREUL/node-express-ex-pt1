@@ -7,23 +7,29 @@ import axios from 'axios'
 let home = await axios
     .get('http://localhost:7777/')
     .then((res) => console.log(res.data))
+    .catch((err) => console.error(err))
 
 let aboutme = await axios
     .get('http://localhost:7777/aboutme')
     .then((res) => console.log(res.data))
+    .catch((err) => console.error(err))
 
 let aboutyou = await axios
     .get('http://localhost:7777/aboutyou')
     .then((res) => console.log(res.data))
+    .catch((err) => console.error(err))
 
 let age = await axios
     .get('http://localhost:7777/vote/12')
     .then((res) => console.log(res.data))
+    .catch((err) => console.error(err))
 
 let palindrome = await axios
     .get('http://localhost:7777/palindromequi/ana')
     .then((res) => console.log(res.data))
+    .catch((err) => console.error(err))
 
 let oddtest = await axios
     .get('http://localhost:7777/oddtest/5')
     .then((res) => console.log(res.data))
+    .catch((err) => console.error(err))

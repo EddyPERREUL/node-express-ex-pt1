@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 
 //2. Ajouter une route /aboutme qui retournera à l'utilisateur des informations à propos de vous
 app.get('/aboutme', (req, res) => {
-    let content = fs.readFileSync('./aboutme.txt', 'utf-8')
+    let content = fs.readFileSync('src/aboutme.txt', 'utf-8')
     res.send(`
     <h1> about me </h1>
     <article> ${content} </article>
